@@ -2,8 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
     <title>To-Do Application</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="header-container">
+      <h1>Just TO-DO it!</h1>
+    </div>
+    <div class="board-container">
+      <div class="task-container todo-board">
+        <div class="board-header">
+          <h2>To-Do</h2>
+          <input
+            class="add-item-input"
+            id="todo-input"
+            type="text"
+            placeholder="Add New Item"
+          />
+        </div>
+        <div class="list-container">
+          <ul id="todo-list">
+            <li>
+              Get a Job
+              <button class="delete-button">X</button>
+              <button class="complete-button">✔</button>
+            </li>
+            <li>
+              Earn lots of money
+              <button class="delete-button">X</button>
+              <button class="complete-button">✔</button>
+            </li>
+            <li>
+              Get a dog
+              <button class="delete-button">X</button>
+              <button class="complete-button">✔</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
